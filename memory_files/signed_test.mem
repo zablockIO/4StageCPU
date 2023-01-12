@@ -1,0 +1,8 @@
+3000 // zero reg0
+3111 // zero reg1
+3222 // zero reg2
+4116 // addi 7 to reg1
+6213 // branch if reg1 < reg0
+5111 // subi 1 from reg1
+D02E // branch if reg2 == reg0
+7000 // halt

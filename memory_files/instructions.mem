@@ -1,0 +1,30 @@
+3000 // zero reg0
+C000 // nop
+C000 // nop
+4006 // addi 6 to reg0 (6)
+C000 // nop
+C000 // nop
+4006 // addi 6 to reg0 (12)
+C000 // nop
+C000 // nop
+2000 // add reg0 to reg0 (24)
+C000 // nop
+C000 // nop
+2000 // add reg0 to reg0 (48) [Addr1]
+C000 // nop
+C000 // nop
+4101 // addi 1 to reg0 store reg1 (49) [Addr2]
+4202 // addi 2 to reg0 store reg2 (50) [Addr3]
+0600 // load [Addr1] to reg6 (Val1)
+0711 // load [Addr2] to reg7 (Val2)
+0822 // load [Addr3] to reg8 (Val3)
+C000 // nop
+2467 // add Val1 to Val2 store reg4
+C000 // nop
+C000 // nop
+1884 // store reg4 at [AddrVal3]
+2548 // add reg4 to reg8 store reg5
+C000 // nop
+C000 // nop
+6050 // display reg5
+7000 // halt

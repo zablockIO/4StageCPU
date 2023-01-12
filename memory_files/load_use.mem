@@ -1,0 +1,14 @@
+3000 // zero reg0
+4006 // addi 6 to reg0 (6)
+4006 // addi 6 to reg0 (12)
+2000 // add reg0 to reg0 (24)
+2000 // add reg0 to reg0 (48) [Addr1]
+0600 // load Addr[48] to reg6 (11)
+4661 // addi 1 to reg6 (12)
+4101 // addi 1 to reg0 store reg1 (49) [Addr2]
+0711 // load Addr[49] to reg7 (1)
+4771 // addi 1 to reg7 (2)
+4202 // addi 2 to reg0 store reg2 (50) [Addr3]
+0822 // load Addr[50] to reg8 (2) 
+4881 // addi 1 to reg8 (3)
+7000
